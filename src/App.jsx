@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import React,{ useEffect, useState } from "react"
 import { NewTodoForm } from "../Components/NewTodoForm"
 import { EditTodoForm } from "../Components/editTodoForm"
 import "./index.css"
@@ -60,7 +60,7 @@ export default function App() {
     setEditingId(id);
   }
 
-  function stopEditing(id) {
+  function stopEditing() {
     setEditingId(null);
   }
 
@@ -78,6 +78,10 @@ export default function App() {
       [updateTodo[index], updateTodo[index+1]] = [updateTodo[index+1], updateTodo[index]];
       setTodos(updateTodo);
     }
+  }
+
+  const handleBackground = () => {
+    
   }
 
   return (

@@ -1,3 +1,6 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
+import React from "react"
 import { TodoItem } from "./TodoItem"
 
 export function TodoList({ todos, toggleTodo, deleteTodo, moveTodoDown,moveTodoUp, index ,editTodo}) {
@@ -9,7 +12,7 @@ export function TodoList({ todos, toggleTodo, deleteTodo, moveTodoDown,moveTodoU
           <TodoItem
             {...todo}
             key={todo.id}
-            toggleTodo={toggleTodo}
+            toggleTodo={toggleTodo} 
             deleteTodo={deleteTodo}
             editTodo={editTodo}
             index={index}

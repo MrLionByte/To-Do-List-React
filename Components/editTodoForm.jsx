@@ -1,4 +1,5 @@
-import { useState } from "react";
+/* eslint-disable react/prop-types */
+import React,{ useState } from "react";
 
 export function EditTodoForm ({ id, currentTitle, onEditTodo, cancel_edit }) {
     const [newTitle, setNewTitle ] = useState(currentTitle);

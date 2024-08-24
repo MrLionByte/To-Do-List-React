@@ -1,5 +1,7 @@
+/* eslint-disable react/prop-types */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp, faArrowDown, faEdit, faTrash } from "@fortawesome/free-solid-svg-icons";
+import React from "react";
 
 export function TodoItem({ completed, id, title, toggleTodo, deleteTodo, moveTodoDown,moveTodoUp, index, editTodo }) {
     return (
